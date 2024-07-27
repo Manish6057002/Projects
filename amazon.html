@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 40px;
+            
+        }
+        .form{
+            border: 1px solid rgb(218, 216, 216);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            width: 348px;
+           row-gap: 20px;
+            border-radius: 10px;
+            line-height: 25px;
+          
+        }
+        .form input{
+            width: 310px;
+            height: 29px;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{
+            width: 100px;
+            height: 60px;
+        }
+        .p{
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+        }
+        .sign button{
+            width: 310px;
+            height: 30px;
+            background-color: #ffc533;
+            border: none;
+            border-radius: 8px;
+            color: black;
+
+        }
+        .content1{
+            line-height: 15px;
+            font-size: 14px;
+        }
+        .email{
+            font-size: 18px;
+        }
+        input[type=checkbox]{
+            width: 15px;
+            height: 15px;
+            border: none;
+        }
+        
+        .check{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        input:focus{
+            outline: 2px solid rgb(77, 167, 202);
+        }
+        .new{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+        }
+        .line{
+            width: 90px;
+            height: 1px;
+            background-color: silver;
+        }
+        .account button{
+            width: 310px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid silver;
+            background-color: white;
+        }
+        .f1{
+            display: flex;
+            gap: 30px;
+            color: rgb(51, 117, 143);
+            font-size: 12px;
+            justify-content: center;
+        }
+        .f2{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="amazon">
+        <div class="logo">
+            <img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png" alt="">
+        </div>
+        <div class="form">
+            <div class="signin">
+                <h2>Sign in</h2>
+            </div>
+            <div class="email">
+                <div class="mobile">
+                    <h5>Email or mobile phone number</h5>
+                </div>
+                <div class="number">
+                    <input type="text">
+                </div>
+
+                
+            </div>
+            <div class="password">
+                <div class="p">
+                    <h5>Password</h5>
+                    <h5>Forgot Password</h5>
+                </div>
+                
+                <div class="pass">
+                    <input type="password">
+                </div>
+            </div>
+           
+            <div class="sign">
+                <button>Sign in</button>
+            </div>
+            <div class="content1">
+                <p>By Continuing, you agree to Amazon's Conditions of
+                Use and Privacy notice</p>
+              
+
+            </div>
+            <div class="check">
+                <input type="checkbox">Keep me signed in
+            </div>
+            <div class="new">
+                <div class="line"></div>New to Amazon?<div class="line"></div>
+            </div>
+            <div class="account">
+                <button>Create your Amazon account</button>
+            </div>
+    
+        </div>
+    </div>
+ <div class="footer">
+   
+    <div class="f1">
+        <p>Conditions of use</p>
+        <p>Privacy Notice</p>
+        <p>Help</p>
+    </div> <br>
+    <div class="f2">
+        <p>&copy 1996-2024,Amazon.com, Inc. or its affiliates</p>
+    </div>
+ </div>
+    
+    
+</body>
+</html>
