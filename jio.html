@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #1d28ca;
+            color: white;
+            padding: 10px;
+            gap: 50px;
+            font-family: helvetica;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+           
+            overflow: hidden;
+            
+        }
+        .links ul{
+            display: flex;
+              align-items: center;
+              justify-content: center;
+              list-style-type: none;
+              gap: 40px;
+
+        }
+        .new{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .links img{
+            width: 40px;
+            height: 40px;
+        }
+        .login ul{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+        }
+        .login img{
+            width: 30px;
+            height: 30px;
+            
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            width: 384px;
+            
+        }
+        .data{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            
+        }
+        .data img{
+            width: 26px;
+        }
+        .qr img{
+            width: 100px;
+            height: 100px;
+        }
+        .recharge{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        .div2{
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+            
+            padding: 60px;
+        }
+        .welcome{
+            border: 1px solid rgb(236, 233, 233);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 2px 3px 4px 5px rgb(230, 227, 227);
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            width: 384px;
+            height: 426px;
+        }
+        .btn{
+            border: 3px solid rgb(233, 230, 230);
+            border-radius: 20px;
+            background-color: rgb(231, 229, 229);
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn button{
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: none;
+        }
+        #b1{
+            border: 1px solid blue;
+            background-color: blue;
+            color: white;
+        }
+        .number input{
+            width: 320px;
+            height: 44px;
+            border-radius: 5px;
+            border: 1px solid silver;
+        }
+        .otp button{
+            width: 320px;
+            height: 50px;
+            border-radius: 30px;
+            background-color: rgb(45, 45, 192);
+            color: white;
+            border: none;
+        }
+        .qr{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            background-color: rgb(243, 242, 242);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .myjio{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .manage{
+            padding-top: 80px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+            background-color: #f5f5f5;
+            line-height: 40px;
+            padding: 40px;
+            font-family: helvetica;
+            font-size: 14px;
+            overflow: auto;
+           
+        }
+        .footer h2{
+            
+        }
+        .icon img{
+            width: 30px;
+            height: 30px;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .copyright{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            border-top: 1px solid rgb(224, 221, 221);
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+        .footer li:hover{
+            background-color: rgb(231, 225, 225);
+        }
+        .social{
+            display: flex;
+            gap: 10px;
+            font-size: 25px;
+            color: white;
+            
+        }
+        .social div{
+            width: 32px;
+            height: 32px;
+            background-color: blue;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #b2:hover{
+            background-color: silver;
+        }
+        #b3:hover{
+            background-color: silver;
+        }
+     @media screen and (max-width: 990px){
+        .div2{
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .container2 {
+            display: none;
+        }
+        .footer{
+            flex-direction: column;
+        }
+        .copyright{
+            flex-direction: column;
+           
+            
+        }
+        .icon{
+            flex-direction: column;
+           
+        }
+        .links li{
+            display: none;
+        }
+        .navbar{
+            overflow: auto;
+        }
+     }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="links">
+            <ul>
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/512px-Reliance_Jio_Logo.svg.png" alt=""></li>
+                <li>Mobile</li>
+                <li>True 5G</li>
+                <li>JioFiber</li>
+                <li> <span>New</span>AirFiber</li>
+                <li>Business</li>
+                <li>Devices</li>
+                <li>Apps</li>
+                <li>Support</li>
+            </ul>
+        </div>
+        <div class="login">
+            <ul>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/10947/10947920.png" alt=""></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/3177/3177440.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="div2">
+    <div class="container2">
+        <div class="manage">
+            <h1>Manage your Digital Life with the MyJio app</h1>
+        </div>
+        <div class="recharge">
+            <div class="data">
+                <img src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt=""> <h4>Recharge, pay bills, and check balance</h4>
+            </div>
+            <div class="data">
+                <img src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt=""> <h4>Sho, UPI, and health</h4>
+            </div>
+            <div class="data">
+                <img src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt=""> <h4>Movies, music, and games</h4>
+            </div>
+            <div class="data">
+                <img src="https://cdn-icons-png.flaticon.com/128/8832/8832119.png" alt=""> <h4>Instant help with JioCare</h4>
+            </div>
+        </div>
+        <div class="qr">
+            <div class="scan">
+                <img src="https://jep-asset.akamaized.net/jiocom/static/images/myjioQRimage.png" alt="">
+            </div>
+            <div class="myjio">
+                <h3>Download MyJio now</h3>
+                <p>Scan the QR code with your mobile to download the app</p>
+            </div>
+        </div>
+    </div>
+    <div class="welcome">
+        <div class="w">
+            <h1>Welcome to Jio</h1>
+            <p>Log in to unlock a world of digital experiences.</p>
+        </div>
+        <div class="btn">
+            <button id="b1">Mobile</button>
+            <button id="b2">JioFiber</button>
+            <button id="b3">Business</button>
+        </div>
+        <div class="number">
+            <p>Mobile Number</p>
+            <input type="number">
+        </div>
+        <div class="otp">
+            <button>Generate OTP</button>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="offerings">
+            <ul>
+                <h4>Our offerings</h4>
+                <li>Prepaid</li>
+                <li>Postpaid</li>
+                <li>Port to Jio</li>
+                <li>International roaming</li>
+                <li>Apps</li>
+                <li>eSIM</li>
+                <li>WiFi Calling</li>
+                <li>Jio Tunes</li>
+                <li>Devices</li>
+                <li>JioAds</li>
+                <li>JioBook</li>
+                <li>5G Network</li>
+            </ul>
+        </div>
+        <div class="support">
+            <ul>
+                <h4>Support</h4>
+                <li>Track order</li>
+                <li>My account</li>
+                <li>FAQ</li>
+                <li>Locate us</li>
+                <li>Lost SIM</li>
+                <li>Claim refund</li>
+                <li>Reclaim number</li>
+                <li>Feedback</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div class="company">
+            <ul>
+                <h4>Our company</h4>
+                <li>Reliance Industries</li>
+                <li>Reliance Foundation</li>
+                <li>JioLife</li>
+                <li>Careers</li>
+                <li>Investor relation</li>
+            </ul>
+            
+        </div>
+        <div class="useful">
+            <ul>
+                <h4>Useful links</h4>
+                <li>Get Jio SIM</li>
+                <li>Choice number</li>
+                <li>JioAutopay</li>
+                <li>Brand offers</li>
+                <li>Partner with Jio</li>
+                <li>Get JioAirFiber</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+        <div class="connect">
+            <div class="c">
+                <h2>Connect with us</h2>
+            </div>
+            <div class="social">
+                <div class="x">
+                    <i class='bx bxl-facebook-circle'></i>
+                   
+                </div>
+                <div class="insta">
+                    <i class='bx bxl-instagram'></i>
+                   
+                </div>
+                <div class="fb">
+                    <i class='bx bxl-twitter'></i>
+                    
+                </div>
+                <div class="yt">
+                    <i class='bx bxl-youtube' ></i>
+                </div>
+                <div class="linkedin">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+            </div>
+            <div class="download">
+                <h2>Download MyJio</h2>
+            </div>
+            <div class="store">
+                <img src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/G-Play.svg" alt="">
+                <img src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/AppStore.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/512px-Reliance_Jio_Logo.svg.png" alt="">
+      
+        
+            <p>Copyright &copy; 2024 Reliance Jio Infocomm Ltd. All rights reserved.</p>
+        </div>
+        <div class="copy">
+            <p>Press release | Regulatory | Policies | Terms & conditions</p>
+        </div>
+    </div>
+    
+</body>
+</html>
