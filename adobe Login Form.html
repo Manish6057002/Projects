@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('https://wallpapers.com/images/hd/starry-sky-at-night-j9b27w14pzfjy3hn.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            gap: 300px;
+            align-items: center;
+           
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .div2{
+            background-color: white;
+            line-height: 40px;
+            padding: 40px;
+            width: 510px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .social{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+        }
+        .social button{
+            width: 396px;
+            height: 58px;
+            border-radius: 50px;
+            border: 2px solid rgb(231, 230, 230);
+            background-color: transparent;
+            font-weight: bold;
+        }
+        .email input {
+            width: 398px;
+            border: none;
+            border-bottom: 1px solid silver;
+          
+            height: 28px;
+        }
+        .continue button{
+            width: 85px;
+            height: 32px;
+            margin-top: 10px;
+            background-color: rgb(46, 119, 230);
+            color: white;
+            border: none;
+            border-radius: 50px;
+        }
+        .continue{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .or{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        .line{
+            width: 180px;
+            height: 1px;
+            background-color: rgb(206, 199, 199);
+        }
+        .email input:focus{
+            outline: none;
+            border-bottom-color: rgb(61, 168, 240);
+           
+        }
+        #b2{
+            background-image: url('https://auth.services.adobe.com/img/social/f_logo_RGB-Blue_58.png');
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: 70px center;
+        }
+        #b3{
+            background-image: url('https://auth.services.adobe.com/img/social/apple.svg');
+            background-repeat: no-repeat;
+            background-position: 90px center;
+        }
+        .logo{
+            color: white;
+        }
+        #b1{
+            background-image: url('https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png');
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: 80px center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="logo">
+           
+                <img src="https://auth.services.adobe.com/img/generic/adobe_logo_white.svg" alt="">
+                <h2>Sign in or crate an account</h2>
+            
+        </div>
+        <div class="div2">
+        <div class="signin">
+            <h1>Sign in</h1>
+            <h3>New User? Create an account</h3>
+        </div>
+        <div class="email">
+            <p>Email address</p>
+            <input type="text">
+        </div>
+        <div class="continue">
+            <button>Continue</button>
+        </div>
+        <div class="or">
+            <div class="line"></div>Or <div class="line"></div>
+        </div>
+        <div class="social">
+            <button id="b1">Continue with Google</button>
+            <button id="b2">Continue with Facebook</button>
+            <button id="b3">Continue with Apple</button>
+            <p>View more</p>
+        </div>
+        <div class="help">
+            <p>Get help Signing in</p>
+        </div>
+        </div>
+        </div>
+   
+</body>
+</html>
