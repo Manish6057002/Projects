@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to GitHub . GitHub</title>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            row-gap: 70px;
+            color: white;
+            background-color: black;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        }
+        .logo img{
+            width: 60px;
+            height: 60px;
+        }
+        .github{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            font-size: 14px;
+        }
+        .github input{
+            width: 254px;
+            height: 32px;
+            border-radius: 5px;
+            border: none;
+            background-color: transparent;
+            border: 1px solid rgba(146, 141, 141, 0.366);
+        }
+        .forgot{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .signin button{
+            width: 254px;
+            height: 32px;
+            background-color: #238636;
+            border: none;
+            border-radius:5px;
+            color: white;
+            font-weight: bold;
+        }
+        .footer ul{
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            font-size: 12px;
+            color: rgba(192, 192, 192, 0.535);
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            border: 1px solid rgba(146, 141, 141, 0.366);
+            border-radius: 5px;
+            padding:20px;
+            
+        }
+        .passkey{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid rgba(146, 141, 141, 0.366);
+            border-radius: 5px;
+            padding:20px 40px 20px 40px;
+        }
+        .username{
+            line-height: 35px;
+        }
+        .password{
+            line-height: 35px;
+        }
+        #blue{
+            color: #4493f8;
+        }
+        .sign h2{
+            font-weight: normal;
+        }
+       .login input:focus{
+        border: 2px solid #4493f8;
+       }
+    </style>
+</head>
+<body>
+    <div class="github">
+        <div class="logo">
+            <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="">
+        </div>
+        <div class="sign">
+            <h2>Sign in to GitHub</h2>
+        </div>
+        <div class="login">
+            <div class="username">
+                <p>Username or email address</p>
+                <input type="text">
+            </div>
+            <div class="password">
+                <div class="forgot">
+                    <p>Password</p>
+                    <p id="blue">Forgot Password</p>
+                </div>
+                <input type="text">
+    
+        </div>
+        <div class="signin">
+            <button>Sign in</button>
+        </div>
+    </div>
+    <div class="passkey">
+        <p id="blue">Sign in with passkey</p>
+        <p>New to GitHub? <span id="blue">Create an account</span> </p>
+    </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Docs</li>
+            <li>Contact GitHub Support</li>
+            <li>Manage Cookies</li>
+            <li>Do not share my personal information</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
