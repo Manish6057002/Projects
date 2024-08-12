@@ -9,10 +9,12 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .header img{
             width: 68px;
             height: 68px;
+            margin-left: 100px;
            
         }
         .header{
@@ -20,7 +22,10 @@
             align-items: center;
             border-bottom: 1px solid rgb(223, 218, 218);
             height: 48px;
-            padding-left: 120px;
+            
+            width: 100%;
+            overflow: hidden;
+           
 
         }
         body{
@@ -28,21 +33,148 @@
             color: #333;
         }
         .container1{
-            width: 419px;
+            width: 460px;
             background-color: #ffffff;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
         }
         .container1 li{
             display: flex;
             align-items: center;
             gap: 10px;
+            line-height: 30px;
             
         }
         .asus{
             display: flex;
+            
+            justify-content: center;
+            margin-top: 30px;
+            padding: 20px;
+        
             margin-left: auto;
             margin-right: auto;
+           
+            
+            
+            
+        }
+        .container2 input{
+            width: 100%;
+            height: 48px;
+            border: 1px solid #818181;
+            border-radius: 4px;
+        }
+        .container2{
+            width: 460px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-left: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+        
+        }
+        .remember{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        input[type=checkbox]{
+            width: 20px;
+            height: 20px;
+        }
+        .check{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #b{
+            width: 100%;
+            height: 48px;
+            border-radius: 4px;
+            color: white;
+            background-color: #006ce1;
+            border: none;
+            font-size: 20px;
+        }
+        .or{
+            display: flex;
             justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .line{
+            width: 120px;
+            height: 1px;
+            background-color: black;
+        }
+        .signup{
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .icons img{
+            width: 32px;
+            height: 32px;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid silver;
+            gap: 100px;
+            padding: 20px;
+            padding-bottom: 50px;
+        }
+        .links ul{
+            display: flex;
+            list-style-type: none;
+            gap: 60px;
+        }
+        @media screen and (max-width:721px){
+            .asus{
+                flex-direction: column-reverse;
+            }
+            .container2{
+                border-left: none;
+            }
+            .container1, .container2{
+                min-width: 100%;
+            }
+
+            .header{
+                justify-content: center;
+                padding-left: 0;
+                margin-left: 0;
+               
+            }
+            .container1{
+                justify-content: center;
+                align-items: center;
+            }
+            .footer{
+                flex-direction: column-reverse;
+            }
+            .links ul{
+                flex-direction: column;
+                row-gap: 0;
+                margin-left: 0;
+            }
+            .remember{
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
@@ -51,6 +183,7 @@
         <img src="https://cdn-icons-png.flaticon.com/128/16183/16183560.png" alt="">
     </div>
     <div class="asus">
+        
         <div class="container1">
             <div class="pic">
                 <img src="https://account.asus.com/img/login_img02.png" alt="">
@@ -82,6 +215,49 @@
                     </li>
                     </ul>
         </div>
+        <div class="container2">
+            <h1>Account Login</h1>
+            <div class="account">
+                <h3>Account</h3>
+                <input type="text">
+                <p>Please enter your email</p>
+            </div>
+            <div class="password">
+                <h3>Password</h3>
+                <input type="password">
+            </div>
+            <div class="remember">
+                <div class="check"><input type="checkbox"> Remember me</div>
+                <h3>Forgot your password?</h3>
+            </div>
+            <button id="b">Signin</button>
+            <div class="signup">
+                <p>Don't Have ASUS Account? Sign Up Now</p>
+                <div class="or">
+                    <div class="line"></div>
+                    Or Sign In with <div class="line"></div>
+                </div>
+                <div class="icons">
+                    <img src="https://account.asus.com/img/openid/icon_fb.svg" alt="">
+                    <img src="https://account.asus.com/img/openid/icon_google.svg" alt="">
+                    <img src="https://account.asus.com/img/openid/icon_apple.svg" alt="">
+                    <img src="https://account.asus.com/img/openid/icon_microsoft.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="links">
+        <ul>
+            <li>&copy;ASUSTek Computer Inc. All rights reserved.</li>
+            <li> Terms of Use Notice |</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </div>
+    <div class="region">
+        India/English
+    </div>
     </div>
     
 </body>
